@@ -1,4 +1,5 @@
 OpenTable Coding Interview 2016: Answers to Questions 
+By Michael Wang
 
 1. What is the running time of your program?
 
@@ -29,4 +30,4 @@ Online: O(N) with N respect to the number of dictionary entries.
 
 
 3. Extra Credit 
-
+My initial thought for this problem would be to optimize for memory space in this given scenario. If we don't have enough memory space to process all of the words in the dictionary, we can try to utilize the limited memory which we do have access to and create a cache of the anagrams with the most corresponding words in the dictionary. We can first check in our cache to see if the user input anagram is found in there, otherwise we would have to iterate through the entire dictionary text file and use the naive solution I proposed before - find each anagram corresponding to the user input by comparing the character frequencies of the user input to the character frequencies in the dictionary entry.
